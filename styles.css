@@ -1,8 +1,8 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 a {
   text-decoration: none;
@@ -21,10 +21,16 @@ body {
   text-align: center;
 }
 
+section .border{
+  /* height: 50%;
+  width: 50%; */
+}
+
 img{
-  display: block;
-  margin: 5px auto;
-  max-width: 100%;
+  display: flex;
+  margin-left: 2rem;
+  height: auto;
+  width: auto;
 }
 
 header{
@@ -34,27 +40,60 @@ header{
 main{ 
   margin-bottom: 1.5rem;
   margin-top: 1rem;
+
+  border-bottom: 0.25rem solid var(--base-color);
+  border-radius: 0.25rem 0.25rem 0 0;
+  text-align: left;
+}
+
+.principal img{
+  height: auto;
+  width: auto;
+
+  margin-left: 4.5rem;
 }
 
 .notice-principal{
-  /* fazer menor */
-  
+  text-align: left;
 }
 
 div.principal h1.title{
   font-family: var(--title-font);
   justify-content: left;
   margin-top: 1.5rem;
+  margin-left: 2rem;
 }
 
 div.principal p.sub-title{
   font-size: 1.5rem;
   font-family:'DM Sans', sans-serif;
-  opacity: 0.8;
+  opacity: 0.6;
+  
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-.report{
+div.principal cite{
+  margin-left: 2rem;
+}
+
+div.report{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 0;
+  border-bottom: 0.25rem solid var(--base-color);
+  border-radius: 0.25rem 0.25rem 0 0;
+  text-align: left;
+
+}
+
+div.report h3{
+  height: 80%;
+  width: 80%;
+
+  margin:0 auto;
+}
+
+footer{
+  height: 100%;
+  width: auto;
 }
