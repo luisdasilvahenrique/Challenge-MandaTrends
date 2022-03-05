@@ -1,99 +1,142 @@
-/* * {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+}
 
 a {
   text-decoration: none;
 }
 
 /* Root */
-:root{
-  --title-font: 'Poppins', sans-serif;
-  --body-font: 'DM Sans', sans-serif;
+:root {
+  --title-font: "Poppins", sans-serif;
+  --body-font: "DM Sans", sans-serif;
 }
 
 body {
   font: 400 1rem var(--body-font);
   background: rgb(255, 255, 255);
-
-  text-align: center;
 }
 
-section .border{
-  /* height: 50%;
-  width: 50%; */
-}
-
-img{
+main {
   display: flex;
-  margin-left: 2rem;
+}
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  margin:1rem;
+
+  background-color: #e6e6e6;
+
+  height: 100%;
+}
+
+section > .principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section > .report {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  display: flex;
   height: auto;
   width: auto;
+
+  margin: 1rem;
 }
 
-header{
+header {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
-main{ 
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
 
+main {
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
-  text-align: left;
 }
 
-.principal img{
+.report > #card-1,
+#card-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  cite{
+  margin-left: -10rem;
+  font-style: normal; 
+  opacity: 0.5; 
+  font-size: 13px;
+}
+
+.principal img {
   height: auto;
   width: auto;
-
-  margin-left: 4.5rem;
 }
 
-.notice-principal{
+.notice-principal {
   text-align: left;
 }
 
-div.principal h1.title{
+.principal cite{
+  margin-left: -29.5rem; 
+  font-style: normal; 
+  opacity: 0.5; 
+  font-size: 13px;
+}
+
+div.principal h1.title {
   font-family: var(--title-font);
-  justify-content: left;
-  margin-top: 1.5rem;
-  margin-left: 2rem;
 }
 
-div.principal p.sub-title{
-  font-size: 1.5rem;
-  font-family:'DM Sans', sans-serif;
+div.principal p.sub-title {
+  font-size: 0.9rem;
+  font-family: "DM Sans", sans-serif;
   opacity: 0.6;
-  
-  margin-left: 2rem;
-  margin-right: 2rem;
+
+  padding-left: 1.5rem;
 }
 
-div.principal cite{
-  margin-left: 2rem;
+cite{
+  text-align: left;
 }
 
-div.report{
+div.report {
   display: flex;
   padding: 0;
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: left;
-
 }
 
-div.report h3{
+div.report h3 {
   height: 80%;
   width: 80%;
-
-  margin:0 auto;
 }
 
-footer{
-  height: 100%;
-  width: auto;
+.footer p, a{
+  color: #0f0f0f;
+  opacity: 0.8;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  main > section {
+    width: 47%;
+  }
 }
