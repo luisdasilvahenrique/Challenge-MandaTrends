@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="MandaTrends" title="MandaTrends" src="https://mandatrends.com.br/wp-content/uploads/2020/08/Logo_MANDATRENDS_2.png" width="220px" />
+  <img alt="MandaTrends" title="MandaTrends" src="https://user-images.githubusercontent.com/61327251/208938707-de06def7-544c-4e94-91a4-6fe8c99d904b.png" width="220px" />
 </h1>
 
 <p align="center">
